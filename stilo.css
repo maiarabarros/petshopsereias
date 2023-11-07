@@ -1,0 +1,748 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;  
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    scroll-behavior: smooth;
+  }
+  
+
+.logo {width: 60px;
+height: 60px;}
+
+
+
+
+header {
+    background-color:#D76249;
+    padding: 24px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    margin-left: 42px;
+    text-align: center;
+    color: white;
+    gap: 32px;
+}
+.openNav {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+
+
+.mySidenavContainer {
+    width: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    transition: 0.5s;
+    overflow-x: hidden;
+  }
+  
+.sidenav {
+  height: 100%; 
+  width: 200px;
+  background-color: rgba(253, 138, 85, 0.9); 
+  padding-top: 100px; 
+  display: flex;
+  flex-direction: column;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s;
+  margin: 0 0 30px 20px;
+  width: fit-content;
+}
+
+.sidenav a:hover {
+  color: rgb(168, 9, 9);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+nav a {
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    gap: 32px;
+    padding: 5px;
+}
+
+
+
+
+#clinica {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    padding: 70px 70px 70px 80px;
+    position: relative;   
+   
+}
+
+.primeiro {
+    max-width: 100%;    
+}
+
+.primeiro li {
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.button {
+    border: none;
+    padding: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.button1 {
+    background-color: #fd8473;
+}
+
+.button1 a {
+    color: #fff;
+}
+
+.button1:hover {
+    background-color: #fd8473;
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.button-transparent a {
+    color: #fd8473;
+}
+
+.button-transparent:hover {
+    border: 1px solid;
+    color: white;
+}
+
+  
+
+.absolute {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 120%;
+    width: 100%;
+} 
+
+
+
+#hospedagem {
+    max-width: 100%;  
+    text-align: center;
+    font-family: 'Montserrat, sans-serif';
+    gap: 32px;
+    font-size: 16px;
+    
+       
+  
+}  
+
+.foto {    
+    padding-bottom: 10px;
+    
+
+}
+
+
+
+#hospedagem h2 {
+    margin: 0 auto;
+    padding-top: 70px;
+}
+ 
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+      
+
+}
+
+.absoluto {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 70;
+    width: 100%;
+} 
+
+#perguntas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding: 64px 80px;    
+
+}
+
+.final{
+    position: 100px;
+   bottom: -842px;
+   height: 480;
+    
+    width:100%;
+    z-index: -10;
+}
+
+.ds{
+    position: relative;
+    
+}
+.ds h2 {margin-top: 80px;}
+
+.ds h3{
+    padding: 20px;
+    border: 2px solid #D76249;
+    border-radius: 10px;
+    cursor: pointer;  
+    margin-bottom: 10px;
+    
+}
+
+.ds img {
+    cursor: pointer;
+    position: absolute;
+    top: 31px;
+    right: 24px;
+}
+
+.ds .paragrafo {
+    border-right: 1px solid #D76249;
+    border-bottom: 1px solid #D76249 ;
+    border-left: 1px solid #D76249;
+    border-radius: 0 0 10px 10px;
+    margin-top: -10px;
+
+    
+    padding: 0 24px;
+    height: 0;
+     opacity: 0;
+    transition: .3s;
+
+}
+
+   .ds.ativa .paragrafo {
+    padding: 24px;
+    height: fit-content;
+    opacity: 1;
+}
+
+footer{
+    background-color:#D76249;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 30px 70px;
+  
+   
+    
+}
+
+footer img,
+footer .titulo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: white;
+    
+}
+
+.footer p, .footer p a {
+    max-width: 350px;
+    margin-bottom: 16px;
+    color: white;
+    
+}
+
+.p {
+    color: rgba(255, 255, 255, 0.61);
+  
+    
+}
+
+.faq {
+    margin-top: 50px;
+}
+
+
+
+footer nav a {
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.562);
+         
+}
+
+#copy {
+    background-color: #d76349cb;
+    text-align: center;
+    padding: 10px;
+    color: white;
+   
+}
+
+#copy a {
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: 600;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+
+
+.paragrafo {
+    
+        line-height: 150%;
+        margin-bottom: 50px;
+      }
+
+
+.paragrafo1 {
+    
+        line-height: 150%;
+        margin-bottom: 32px;
+      
+}
+
+.button {
+    background-color: #D76249;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.button-transparente {
+    background-color: transparent;
+    color: rgba(231, 116, 62, 0.836);
+    padding: 16px 32px; 
+    text-decoration: none;
+    text-underline-offset: 4px;
+    padding-left: 25px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    
+    .sidenav a {
+      font-size: 18px;
+    }
+
+    .absolute {
+      
+   height: 5%;
+    }
+  }
+
+
+@media screen and (max-width: 1180px) {
+  
+    #clinica {
+      padding: 24px 10px 128px;
+    }
+
+    #menu a {padding: 2px;} 
+ 
+       
+  
+    #clinica {
+      padding: 64px 50px;
+    }
+  
+    #perguntas {
+      padding: 64px 10px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    
+    #clinica {
+      padding: 24px 10px 98px;
+    }
+    #menu a {padding: 1px;}
+  
+    .button {
+      text-align: center;
+      line-height: 20px;
+    }
+
+   .absolute {
+       top: 95%;
+                  }
+    #hospedagem {
+        padding-top: 2px;
+    }
+   
+    #clinica {
+      padding: 64px 20px;
+    }
+  
+    #perguntas img[src*= faq] {
+      width: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    
+    header {
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0;
+      height: 110px;
+    }
+    #menu a {padding: 1px;}
+  
+    #clinica {
+      flex-direction: column-reverse;
+      padding: 60px 80px;
+    }
+   
+    #clinia .primeiro {
+      text-align: center;
+    }
+  
+    #clinica .primeiro .button {
+      margin: 0 auto;
+    }
+  
+    #clinica {
+      flex-direction: column;
+      padding: 80px;
+    }
+  
+    #clinica div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #clinica div h2,
+    #clinica div .paragrafo {
+      text-align: center;
+    }
+  
+    #clinica ul {
+      padding: 0 30px;
+    }
+  
+    #clinica ul li {
+      margin: 0 0 22px 68px;
+    }
+    .absolute {
+        bottom: 40%;
+         height: 90%;
+     }
+  
+    #hospedagem img {
+      margin: 34px auto;
+    }
+  
+    #perguntas {
+      flex-direction: column;
+      padding: 80px;
+    }
+  
+    #perguntas img[src*= faq] {
+      width: 540px;
+    }
+  
+    #perguntas .ds {
+      text-align: center;
+      margin-top: 40px;
+   
+    }
+  
+    footer {
+      padding: 64px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    header {
+      flex-direction: row;
+      height: 90px;
+      justify-content: space-around;
+    }
+    #menu a {padding: 1px;}
+ 
+  
+    header .menu {
+      display: none;
+    }
+  
+    header .openNav {
+      display: block;
+    }
+   
+  
+    #clinica {
+      padding: 30px;
+    }
+  
+    #clinica {
+      padding: 100px 20px;
+    }
+    .absolute {
+        bottom: 40%;
+         height: 90%;
+     }
+   
+    #hospedagem {
+        padding-top: 2px;
+    }
+  
+    #hospedagem img {
+      width: 500px;
+    }
+  
+    footer {
+      flex-wrap: wrap;
+      padding: 20px 80px;
+      gap: 20px;
+    }
+  
+    footer div {
+      padding: 10px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 550px) {
+    
+    #clinica {
+      padding: 30px 10px 0;
+    }
+    #menu a {padding: 1px;}
+    #clinica ul {
+      padding: 0;
+    }
+    .absolute {
+        top: 1230px;
+         height: 9%;
+     }
+
+    #clinica ul li {
+      margin: 0 0 22px 28px;
+    }
+  
+    #hospedagem img {
+      width: 400px;
+    }
+    #hospedagem {
+        padding-top: 50px;
+    }
+
+    #hospedagem h2 {
+        bottom: 40%;
+    }
+  
+    #perguntas {
+      padding: 80px 40px;
+    }
+  
+    #perguntas img[src*= faq] {
+      width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    
+    #clinica {
+      padding: 30px 5px 0;
+    }
+    #menu a {padding: 1px;}
+  
+    #clinica .primeiro .button .button-transparent  {
+      padding: 16px 24px;
+    }
+    .absolute {
+        bottom: 40%;
+         height: 10%;
+     }
+ 
+    #clinica img[src*= start] {
+      width: 450px;
+      height: 450px;
+    }
+    #menu a {padding: 1px;}
+  
+    #perguntas{
+      padding: 80px 20px;
+    }
+  
+    #pergunas img[src*= faq] {
+      width: 420px;
+    }
+  
+  }
+  
+  @media  screen and (max-width: 420px) {
+    
+    #clinica .primeiro .button {
+      flex-direction: column;
+      gap: 40px;
+    }
+   
+    .absolute {
+       top: 1350px;
+       
+     }
+     #hospedagem {padding-top: 30%;}
+  } 
+
+.sidenav {
+    width: 160px;
+  }
+    #menu a {padding: 1px;}
+  
+    #clinica img[src*= start] {
+      width: 350px;
+      height: 350px;
+    }
+  
+    #clinica img {
+      width: 350px;
+      height: 350px;
+    }
+  
+    #hospedagem img {
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+    }
+  
+    #perguntas {
+      padding: 70px 10px;
+    }
+  
+    #perguntas img[src*= faq] {
+      width: 350px;
+      height: 350px;
+    }
+  
+    footer {
+      padding: 20px;
+    }
+  
+    .sidenav {
+      width: 160px;
+    }
+  
+  
+  @media screen and (max-width: 360px) {
+    
+    #clinica {
+      padding: 30px 0;
+    }
+    #menu a {padding: 1px;}
+   
+  
+    #clinica img[src*= start] {
+      width: 300px;
+      height: 300px;
+    }
+    .absolute {
+        
+         height: 10%;
+     }
+    
+    #clinica {
+      padding: 100px 10px;
+    }
+  
+    #clinica img {
+      width: 300px;
+      height: 300px;
+    }
+  
+    #hospedagem {
+      padding: 60px 0;
+    }
+  
+    #hospedagem img {
+      width: 300px;
+      height: 300px;
+    }
+  
+    #perguntas {
+      padding: 70px 5px;
+    }
+  
+    #perguntas img[src*= faq] {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+
+  
+   
+
+    
+
+
